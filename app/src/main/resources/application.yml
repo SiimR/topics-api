@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/topics
+    username: test
+    password: test
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
+  liquibase:
+    enabled: true

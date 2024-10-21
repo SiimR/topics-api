@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-topic-table
+      author: siimraudsepp1@gmail.com
+      changes:
+        - createTable:
+            tableName: topic
+            remarks: User posted topics - title and body
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  remarks: Primary key (technical field, added by the system)
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: title
+                  type: text
+                  remarks: Title of the user posted topic
+                  constraints:
+                    nullable: false
+              - column:
+                  name: body
+                  type: text
+                  remarks: Body of the user posted topic
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamptz
+                  remarks: Creation timestamp (technical field, added by the system)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_by
+                  type: text
+                  remarks: Creator identifier (technical field, added by the system)
+                  constraints:
+                    nullable: false
