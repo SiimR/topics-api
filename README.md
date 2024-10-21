@@ -15,8 +15,8 @@ This is a simple web API developed using **Spring Boot 3**, **Java**, **JOOQ**, 
 This project follows the **Clean Architecture Pattern** (Ports & Adapters), organized into the following packages:
 
 - **domain**: Contains the core domain logic and entities.
-- **web**: Adapter for web-related concerns, handling HTTP requests.
-- **jdbc**: Adapter for data persistence, utilizing JDBC with JOOQ.
+- **adapter/web**: Adapter for web-related concerns, handling HTTP requests.
+- **adapter/jdbc**: Adapter for data persistence, utilizing JDBC with JOOQ.
 
 ---
 
